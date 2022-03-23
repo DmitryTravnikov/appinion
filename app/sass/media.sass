@@ -1,0 +1,1695 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 320px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__wrapper
+		&__logo
+		&__logo-image
+		&__collapsed-block
+			+flex(column, wrap, flex-start, center)
+			&.active
+		&__menu
+			+flex(column, wrap, flex-start, center)
+		&__menu-link
+			&:first-child
+		&__language-select
+		&__language-option
+		&__language-select-fake-container
+		&__language-select-fake
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__language-select-options-container-fake
+			&.active
+		&__language-option-fake
+			&.active
+		&__log-in-button
+			width: 26.5rem
+			padding: 1.8rem 0rem 1.8rem 3.2rem
+			background: url('../assets/header__user-icon.webp') no-repeat 10.4rem center
+		&__get-free-button
+			width: 26.5rem
+			&:hover
+		&__hamburger
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__text-container
+			+flex(column, wrap, flex-start, center)
+			width: 26rem
+		&__headline
+			text-align: center
+			span
+		&__paragraph
+			text-align: center
+		&__form
+			+flex(column, wrap, flex-start, center)
+		&__input-label
+			&::before
+		&__input
+		&__email-input
+		&__submit-button
+		&__additional-info
+			text-align: center
+		&__online-consulting-link
+		&__online-consulting-image
+
+	.brands
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+			padding: 5rem 0rem
+		&__paragraph
+			text-align: center
+		&__slider
+		&__slide
+			+flex(row, wrap, center, center)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__brand
+			+size(12rem, 5rem)
+			margin: 1rem
+		&__brand:nth-child(odd)
+			&:hover
+		&__brand:nth-child(even)
+			&:hover
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4
+		&__brand5
+		&__brand6
+		&__brand7
+		&__brand8
+
+	.widget
+		background-size: 15%
+		&__wrapper
+		&__live-link
+			width: 26rem
+			&::before
+		&__live-image
+		&__text-container
+			+flex(column, wrap, center, center)
+		&__headline
+			width: 26rem
+			text-align: center
+		&__paragraph
+			width: 26rem
+			text-align: center
+
+	.troubles
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__headline
+			width: 26rem
+		&__content
+			width: 26rem
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item-headline
+		&__item-paragraph
+
+	.stream
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__headline
+			width: 28rem
+			span
+		&__paragraph
+			width: 28rem
+		&__collage
+			width: 28rem
+		&__laptop
+		&__box
+		&__text-container
+		&__collage-paragraph1
+			span
+		&__collage-paragraph2
+			span
+		&__get-free-button
+			width: 28rem
+
+	.app
+		&__wrapper
+		&__image
+			width: 28rem
+		&__content
+			width: 28rem
+		&__headline
+		&__paragraph
+		&__download-buttons-container
+			+flex(row, wrap, center, center)
+		&__download-button
+			margin: 0rem
+			margin-right: 1rem
+		&__app-store-download-button
+		&__google-play-download-button
+
+	.installing
+		&__wrapper
+		&__image
+			width: 28rem
+		&__text-container
+			width: 28rem
+		&__headline
+		&__paragraph
+
+	.sellings
+		&__wrapper
+			padding-bottom: 7rem
+		&__image
+			width: 28rem
+		&__text-container
+			width: 28rem
+		&__headline
+			span
+		&__paragraph
+		&__get-free-button
+			width: 28rem
+
+	.cases
+		&::before
+			background-size: auto
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+			padding-top: 6rem
+		&__headline
+			width: 28rem
+		&__paragraph
+			width: 28rem
+		&__slider-container
+			width: 28rem
+		&__slider
+		&__slide
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__video-container
+			&::before
+			&.active::before
+		&__video
+		&__play-video-button
+			&.active
+			&:hover
+		&__text-container
+		&__company-name
+		&__list
+		&__list-item
+			&:first-child
+			&::before, &::after
+			&::before
+			&::after
+		&__additional-list
+			&.active
+		&__show-additional-list
+			&:hover
+			&:hover::before
+			&::before
+			&.active
+		&__slider-buttons-container
+		&__slider-button
+			&:hover
+		&__prev-button
+			&::before, &::after
+			&::before
+			&::after
+		&__next-button
+			&::before, &::after
+			&::before
+			&::after
+
+	.faq
+		&__wrapper
+		&__block
+			width: 26rem
+		&__headline
+			span
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__get-free-button
+			width: 26rem
+		&__block1
+		&__block2
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+			span
+
+	.prices
+		&__wrapper
+		&__headline
+		&__content
+			width: 28rem
+		&__tariff
+			box-shadow: 0rem .4rem .4rem rgba(#000, .05)
+			&:first-child
+			&::before
+			&:hover
+		&__tariff1
+			&::before
+		&__tariff2
+			&::before
+		&__tariff3
+			&::before
+		&__tariff-name
+		&__tariff-price
+			span
+		&__tariff-price-description
+		&__options
+		&__option
+			&:first-child
+			&::before
+		&__tariff1 &__option1
+			&::before
+		&__tariff1 &__option2
+			&::before
+		&__tariff1 &__option3
+			&::before
+		&__tariff1 &__option4
+			&::before
+		&__tariff1 &__option5
+			&::before
+		&__tariff2 &__option1
+			&::before
+		&__tariff2 &__option2
+			&::before
+		&__tariff2 &__option3
+			&::before
+		&__tariff2 &__option4
+			&::before
+		&__tariff2 &__option5
+			&::before
+		&__tariff3 &__option1
+			&::before
+		&__tariff3 &__option2
+			&::before
+		&__tariff3 &__option3
+			&::before
+		&__tariff3 &__option4
+			&::before
+		&__tariff3 &__option5
+			&::before
+		&__get-free-button
+
+	.contact
+		&__wrapper
+		&__headline
+			width: 28rem
+			text-align: center
+		&__paragraph
+			width: 28rem
+			text-align: center
+		&__form
+			width: 28rem
+		&__row
+		&__row1
+		&__row2
+		&__row3
+		&__input-label
+			&::before
+		&__name-input-label
+			&::before
+		&__email-input-label
+			&::before
+		&__site-input-label
+			&::before
+		&__comment-input-label
+			&::before
+		&__input
+		&__name-input
+		&__email-input
+		&__site-input
+		&__comment-input
+		&__submit-button
+		&__safety-link
+			span
+			&:hover
+
+	.footer
+		&__wrapper
+			+flex(column, wrap, center, center)
+			&::before
+		&__logo-container
+			width: auto
+		&__logo-image
+		&__socials-container
+			width: auto
+			margin-top: 1.8rem
+		&__social-link
+			margin-right: 1rem
+			&:last-child
+				margin-right: 0rem
+			&:hover
+			svg
+				path
+		&__social-link:hover svg path
+		&__vk
+		&__facebook
+			svg
+		&__instagram
+		&__download-links-container
+			width: 27rem
+		&__download-app-link
+		&__play-market-link
+		&__app-store-image
+		&__play-market-image
+		&__contacts-container
+			width: 21rem
+			+flex(column, wrap, center, flex-start)
+			&::before
+		&__contact-link
+			&:hover
+			&::before
+		&__phone
+			&::before
+		&__email
+			&::before
+		&__list
+			+flex(column, wrap, center, center)
+		&__list-item
+			margin: 0.4rem
+			&:last-child
+				margin: 0.4rem
+		&__list-link
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__paragraph
+			width: 28rem
+			text-align: center
+		&__list
+			width: 28rem
+			+flex(column, wrap, flex-start, center)
+		&__list-item
+			&:first-child
+		&__list-link
+			&:hover
+			span
+		&__list-link:last-child:hover
+		&__list-link:last-child:hover span
+
+	.modal
+		&__overlay
+		&__close-button
+			&:hover
+			&::before, &::after
+			&::before
+			&::after
+		&__registration-form-container
+			width: 28rem
+		&__registration-form
+		&__input-label
+		&__email-input-label
+			&::before
+		&__password-input-label
+			&::before
+		&__input
+		&__email-input
+		&__password-input
+		&__button
+		&__log-in-button
+		&__registration-button
+		&__success-container
+			width: 28rem
+		&__success-paragraph
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__text-container
+		&__headline
+			span
+		&__paragraph
+		&__form
+		&__input-label
+			&::before
+		&__input
+		&__email-input
+		&__submit-button
+		&__additional-info
+		&__online-consulting-link
+			width: 40rem
+			position: static
+			margin-top: 4rem
+			padding: 2rem 1rem
+			+flex(column, wrap, center, center)
+		&__online-consulting-image
+
+
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.main
+		background: linear-gradient(90deg, #fff 0%, #fff 50%, $blue 50%, $blue 100%)
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__text-container
+			width: 45%
+			+flex(column, wrap, flex-start, center)
+		&__headline
+			width: 28rem
+			span
+		&__paragraph
+			width: 28rem
+		&__form
+		&__input-label
+			width: 29rem
+			&::before
+		&__input
+		&__email-input
+		&__submit-button
+			width: 29rem
+		&__additional-info
+		&__online-consulting-link
+			width: 45%
+			position: static
+			padding: 1rem
+		&__online-consulting-image
+			width: 100%
+
+	.brands
+		&__wrapper
+		&__paragraph
+		&__slider
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__brand
+			margin-left: 2rem
+			margin-right: 2rem
+		&__brand:nth-child(odd)
+			&:hover
+		&__brand:nth-child(even)
+			&:hover
+		&__brand1
+		&__brand2
+		&__brand3
+			display: block
+		&__brand4
+			display: block
+		&__brand5
+		&__brand6
+		&__brand7
+		&__brand8
+
+	.widget
+		background-size: 10%
+		&__wrapper
+			padding-bottom: 6rem
+		&__live-link
+			width: 100%
+			+size(57rem, 34.2rem)
+			&::before
+		&__live-image
+		&__text-container
+			+flex(column, wrap, center, center)
+			width: 50rem
+		&__headline
+			width: 100%
+			text-align: center
+		&__paragraph
+			width: 100%
+			text-align: center
+
+	.troubles
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, center, flex-start)
+			width: 100%
+		&__item
+			width: calc(100% / 3.5)
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+		&__item1
+		&__item2
+		&__item3
+		&__item-headline
+		&__item-paragraph
+
+	.stream
+		&__wrapper
+		&__headline
+			span
+		&__paragraph
+			width: 50rem
+		&__collage
+			width: 67rem
+		&__laptop
+		&__box
+			bottom: -5.6rem
+			left: -1rem
+			width: 20%
+		&__text-container
+			position: absolute
+			top: 7rem
+			right: -2.6rem
+			+size(12rem, 20.4rem)
+			+flex(column, wrap, center, center)
+			padding: 0rem
+			border-top-left-radius: 0rem
+			border-bottom-left-radius: 0rem
+		&__collage-paragraph1
+			width: 5rem
+			margin: 0rem
+			span
+		&__collage-paragraph2
+			width: 100%
+			text-align: center
+			margin: 0rem
+			margin-top: 2rem
+			span
+		&__get-free-button
+
+	.app
+		&__wrapper
+			+flex(row, wrap, space-around, center)
+		&__image
+			width: 45%
+			margin-top: 0rem
+		&__content
+			width: 45%
+			+flex(column, wrap, flex-start, flex-start)
+			margin-top: 0rem
+		&__headline
+			width: 100%
+		&__paragraph
+			width: 100%
+		&__download-buttons-container
+			width: 100%
+			+flex(row, wrap, flex-start, flex-start)
+		&__download-button
+		&__app-store-download-button
+		&__google-play-download-button
+
+	.installing
+		&__wrapper
+			+flex(row, wrap, space-around, center)
+		&__image
+			order: 2
+			width: 45%
+		&__text-container
+			order: 1
+			width: 45%
+		&__headline
+		&__paragraph
+
+	.sellings
+		&__wrapper
+			+flex(row, wrap, space-around, center)
+		&__image
+			width: 45%
+		&__text-container
+			width: 45%
+		&__headline
+			margin: 0rem
+			span
+		&__paragraph
+		&__get-free-button
+
+	.cases
+		&__wrapper
+		&__headline
+			width: 40rem
+		&__paragraph
+			width: 50rem
+		&__slider-container
+			width: 64rem
+		&__slider
+			width: 100%
+		&__slide
+			width: 100%
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__video-container
+			+size(100%, 40rem)
+			&::before
+			&.active::before
+		&__video
+		&__play-video-button
+			&.active
+			&:hover
+		&__text-container
+		&__company-name
+		&__list
+		&__list-item
+			&:first-child
+			&::before, &::after
+			&::before
+			&::after
+		&__additional-list
+			&.active
+		&__show-additional-list
+			&:hover
+			&:hover::before
+			&::before
+			&.active
+		&__slider-buttons-container
+		&__slider-button
+			&:hover
+		&__prev-button
+			&::before, &::after
+			&::before
+			&::after
+		&__next-button
+			&::before, &::after
+			&::before
+			&::after
+
+	.faq
+		&__wrapper
+			+flex(row, wrap, space-around, flex-start)
+		&__block
+			width: 45%
+			margin: 0rem
+			+flex(column, wrap, flex-start, flex-start)
+		&__block1
+		&__block2
+		&__headline
+			span
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__get-free-button
+			position: static
+			transform: translateX(0%)
+			margin-top: 3rem
+		&__block
+		&__block1
+		&__block2
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+			span
+
+	.prices
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, space-around, flex-start)
+			width: 100%
+		&__tariff
+			width: calc(100% / 3)
+			margin: 0rem
+			padding-left: 1rem
+			padding-right: 1rem
+			&:first-child
+			&::before
+			&:hover
+		&__tariff1
+			&::before
+		&__tariff2
+			&::before
+		&__tariff3
+			&::before
+		&__tariff-name
+		&__tariff-price
+			font-size: 1.6rem
+			span
+				font-size: 1.6rem
+		&__tariff-price-description
+			font-size: 1rem
+			top: 14.8rem
+		&__options
+		&__option
+			&:first-child
+			&::before
+		&__tariff1 &__option1
+			&::before
+		&__tariff1 &__option2
+			&::before
+		&__tariff1 &__option3
+			&::before
+		&__tariff1 &__option4
+			&::before
+		&__tariff1 &__option5
+			&::before
+		&__tariff2 &__option1
+			&::before
+		&__tariff2 &__option2
+			&::before
+		&__tariff2 &__option3
+			&::before
+		&__tariff2 &__option4
+			&::before
+		&__tariff2 &__option5
+			&::before
+		&__tariff3 &__option1
+			&::before
+		&__tariff3 &__option2
+			&::before
+		&__tariff3 &__option3
+			&::before
+		&__tariff3 &__option4
+			&::before
+		&__tariff3 &__option5
+			&::before
+		&__get-free-button
+
+	.contact
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__form
+			width: 60rem
+		&__row
+		&__row1
+			+flex(row, wrap, space-between, flex-start)
+		&__row2
+			margin-top: 2rem
+		&__row3
+		&__input-label
+			width: 32%
+			margin: 0rem
+			&::before
+		&__name-input-label
+			width: 32%
+			margin: 0rem
+			&::before
+		&__email-input-label
+			width: 32%
+			margin: 0rem
+			&::before
+		&__site-input-label
+			&::before
+		&__comment-input-label
+			width: 100%
+			&::before
+		&__input
+		&__name-input
+		&__email-input
+		&__site-input
+		&__comment-input
+		&__submit-button
+		&__safety-link
+			span
+			&:hover
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+			&::before
+		&__logo-container
+			order: 1
+			display: none
+		&__logo-image
+		&__socials-container
+			margin-top: 0rem
+			order: 4
+		&__social-link
+			&:last-child
+			&:hover
+			svg
+				path
+		&__social-link:hover svg path
+		&__vk
+		&__facebook
+			svg
+		&__instagram
+		&__download-links-container
+			order: 2
+			margin: 0rem
+		&__download-app-link
+		&__play-market-link
+		&__app-store-image
+		&__play-market-image
+		&__contacts-container
+			order: 3
+			margin: 0rem
+			padding: 0rem
+			width: auto
+			&::before
+				content: none
+		&__contact-link
+			&:hover
+			&::before
+		&__phone
+			margin-top: 0rem
+			&::before
+		&__email
+			&::before
+		&__list
+			order: 5
+			width: 100%
+			+flex(row, wrap, flex-start, flex-start)
+		&__list-item
+			margin-right: 1.6rem
+			&:last-child
+		&__list-link
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+		&__paragraph
+			width: 50%
+			text-align: left
+			margin-top: 1rem
+		&__list
+			width: 50%
+			margin-top: 0rem
+			+flex(row, wrap, center, flex-start)
+		&__list-item
+			margin: 0rem
+			width: 40%
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+		&__list-link
+			&:hover
+			span
+		&__list-link:last-child:hover
+		&__list-link:last-child:hover span
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.faq
+		&__wrapper
+		&__block
+			width: 40rem
+		&__headline
+			span
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__get-free-button
+		&__block1
+		&__block2
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+			span
+
+	.prices
+		&__wrapper
+		&__headline
+		&__content
+		&__tariff
+			width: calc(100% / 3.6)
+			&:first-child
+			&::before
+			&:hover
+		&__tariff1
+			&::before
+		&__tariff2
+			&::before
+		&__tariff3
+			&::before
+		&__tariff-name
+		&__tariff-price
+			span
+		&__tariff-price-description
+		&__options
+		&__option
+			&:first-child
+			&::before
+		&__tariff1 &__option1
+			&::before
+		&__tariff1 &__option2
+			&::before
+		&__tariff1 &__option3
+			&::before
+		&__tariff1 &__option4
+			&::before
+		&__tariff1 &__option5
+			&::before
+		&__tariff2 &__option1
+			&::before
+		&__tariff2 &__option2
+			&::before
+		&__tariff2 &__option3
+			&::before
+		&__tariff2 &__option4
+			&::before
+		&__tariff2 &__option5
+			&::before
+		&__tariff3 &__option1
+			&::before
+		&__tariff3 &__option2
+			&::before
+		&__tariff3 &__option3
+			&::before
+		&__tariff3 &__option4
+			&::before
+		&__tariff3 &__option5
+			&::before
+		&__get-free-button
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+			&::before
+		&__logo-container
+			display: block
+		&__logo-image
+		&__socials-container
+		&__social-link
+			&:last-child
+			&:hover
+			svg
+				path
+		&__social-link:hover svg path
+		&__vk
+		&__facebook
+			svg
+		&__instagram
+		&__download-links-container
+		&__download-app-link
+		&__play-market-link
+		&__app-store-image
+		&__play-market-image
+		&__contacts-container
+			&::before
+		&__contact-link
+			&:hover
+			&::before
+		&__phone
+			&::before
+		&__email
+			&::before
+		&__list
+		&__list-item
+			&:last-child
+		&__list-link
+			&:hover
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+wrapper(117rem, auto)
+
+	.header
+		background: linear-gradient(90deg, #fff 0%, #fff 57.3%, $blue 57.3%, $blue 100%)
+		z-index: 2
+		&__wrapper
+			padding-top: 2rem
+			+flex(row, wrap, flex-start, flex-start)
+			background: linear-gradient(90deg, #fff 0%, #fff 57.3%, $blue 57.3%, $blue 100%)
+		&__logo
+		&__logo-image
+		&__collapsed-block
+			+flex(row, wrap, flex-end, flex-start)
+			opacity: 1
+			z-index: 2
+			position: relative
+			left: 0rem
+			width: calc(100% - 8.1rem)
+			padding: 0rem
+			background: none
+			&.active
+			opacity: 1
+			z-index: 2
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)
+			margin: 0rem
+			margin-right: 9.2rem
+			margin-top: 1rem
+			margin-right: 27.7rem
+		&__menu-link
+			margin-top: 0rem
+			font-family: $mr
+			font-size: 1.2rem
+			color: $black
+			margin-right: 4.1rem
+			&:last-child
+				margin-right: 0rem
+			&:first-child
+		&__language-select
+		&__language-option
+		&__language-select-fake-container
+			margin: 0rem
+			margin-right: 4.2rem
+			margin-top: 1rem
+			position: absolute
+			top: 0rem
+			right: 30.5rem
+		&__language-select-fake
+			font-family: $mm
+			font-size: 1.2rem
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__language-select-options-container-fake
+			&.active
+		&__language-option-fake
+			&.active
+		&__log-in-button
+			width: auto
+			margin: 0rem
+			background: url('../assets/header__user-icon.webp') no-repeat 0.2rem center
+			font-family: $mm
+			font-size: 1.2rem
+			padding: 1.2rem 2.6rem
+			border: none
+			margin-right: 2.3rem
+		&__get-free-button
+			margin: 0rem
+			padding: 1.2rem 2.5rem
+			width: auto
+			font-family: $mm
+			font-size: 1.2rem
+			&:hover
+		&__hamburger
+			display: none
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+
+	.main
+		background: linear-gradient(90deg, #fff 0%, #fff 57.3%, $blue 57.3%, $blue 100%)
+		&__wrapper
+			background: linear-gradient(90deg, #fff 0%, #fff 57.3%, $blue 57.3%, $blue 100%)
+			+flex(row, wrap, flex-start, flex-start)
+			padding-bottom: 11rem
+		&__text-container
+			width: 58.15%
+			margin-top: 14rem
+		&__headline
+			font-family: $ml
+			font-size: 4rem
+			color: $black
+			line-height: 5.6rem
+			width: 100%
+			text-align: left
+			span
+				font-family: $msb
+		&__paragraph
+			font-family: $mr
+			font-size: 1.4rem
+			line-height: 2.6rem
+			width: 100%
+			text-align: left
+			margin-top: 2rem
+		&__form
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 2.9rem
+		&__input-label
+			margin-top: 0rem
+			&::before
+		&__input
+		&__email-input
+		&__submit-button
+			margin-top: 0rem
+			margin-left: 1rem
+			width: 27rem
+		&__additional-info
+			font-family: $mr
+			font-size: 1.2rem
+			margin-top: 1.4rem
+			text-align: left
+		&__online-consulting-link
+			background: none
+			padding-top: 3.2rem
+			padding-left: 0rem
+			padding-right: 2rem
+			padding-bottom: 4rem
+			width: calc(100% - 58.15%)
+			+flex(column, wrap, flex-start, flex-start)
+		&__online-consulting-image
+			transform: scale(1.05)
+
+	.brands
+		&__wrapper
+			padding-top: 6.4rem
+			padding-bottom: 6rem
+		&__paragraph
+			text-align: left
+			font-family: $mm
+			font-size: 1.4rem
+		&__slider
+			margin-top: 2rem
+		&__slide
+			+flex(row, wrap, space-between, flex-start)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__brand
+			margin: 0rem
+		&__brand:nth-child(odd)
+			&:hover
+		&__brand:nth-child(even)
+			&:hover
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4
+		&__brand5
+			display: block
+		&__brand6
+			display: block
+		&__brand7
+			display: block
+		&__brand8
+			display: block
+
+	.widget
+		background-position: 82.7% 98%
+		background-size: 7.9%
+		&__wrapper
+			padding-top: 12.1rem
+			padding-bottom: 12rem
+			+flex(row, wrap, space-between, flex-start)
+		&__live-link
+			&::before
+				top: 2rem
+				left: 2rem
+		&__live-image
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+			+size(54rem, auto)
+			margin-top: 4rem
+		&__headline
+			+headlineStyleD()
+			margin-top: 2rem
+		&__paragraph
+			text-align: left
+			font-family: $mr
+			font-size: 1.4rem
+			line-height: 2.6rem
+			margin-top: 2rem
+
+	.troubles
+		&__wrapper
+			padding-top: 0.1rem
+		&__headline
+			+headlineStyleD()
+			text-align: center
+		&__content
+			margin-top: 5.9rem
+			+flex(row, wrap, space-between, flex-start)
+		&__item
+			+size(37rem, auto)
+			margin: 0rem
+			&:first-child
+				margin: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__item-headline
+		&__item-paragraph
+			margin-top: 0.5rem
+			width: 25.3rem
+			line-height: 2.2rem
+
+	.stream
+		&__wrapper
+			padding-top: 8.9rem
+			padding-bottom: 0rem
+		&__headline
+			+headlineStyleD()
+			text-align: center
+			span
+		&__paragraph
+			padding-top: 1rem
+			width: 66%
+			margin-top: 0.9rem
+		&__collage
+			margin-top: 0rem
+			width: 100%
+			+flex(column, wrap, flex-start, center)
+			top: -2rem
+		&__laptop
+		&__box
+			width: 14.8%
+			bottom: -5.9rem
+			left: 7rem
+		&__text-container
+			right: 7.2rem
+			top: 11rem
+		&__collage-paragraph1
+			margin-top: 1rem
+			span
+		&__collage-paragraph2
+			span
+		&__get-free-button
+			position: relative
+			top: -5.9rem
+
+	.app
+		padding: 0rem
+		&__wrapper
+			padding-top: 1rem
+			+flex(row, wrap, flex-start, flex-start)
+		&__image
+			margin: 0rem
+			position: relative
+			top: -1rem
+			width: auto
+			margin-left: 5.5rem
+		&__content
+			width: 44.4rem
+			padding-top: 11rem
+		&__headline
+			+headlineStyleD()
+		&__paragraph
+			margin-top: 2rem
+			padding-right: 0rem
+		&__download-buttons-container
+			margin-top: 3rem
+		&__download-button
+		&__app-store-download-button
+			margin-right: 2rem
+		&__google-play-download-button
+
+	.installing
+		&__wrapper
+			+flex(row, wrap, center, flex-start)
+			padding-top: 0rem
+			padding-bottom: 0rem
+		&__image
+			margin: 0rem
+			width: 56%
+			position: relative
+			top: -4.5rem
+		&__text-container
+			width: calc(100% - 56%)
+			padding-left: 10.2rem
+			padding-top: 7rem
+		&__headline
+			+headlineStyleD()
+		&__paragraph
+			margin-top: 2rem
+
+	.sellings
+		&__wrapper
+			padding-top: 0rem
+			padding-bottom: 0rem
+			+flex(row, wrap, center, flex-start)
+		&__image
+			width: 56%
+			position: relative
+			left: -5.6rem
+			top: -2.7rem
+		&__text-container
+			width: calc(100% - 56%)
+			position: relative
+			padding-top: 9.4rem
+			left: -5.3rem
+		&__headline
+			+headlineStyleD()
+			span
+		&__paragraph
+			margin-top: 1.8rem
+			padding-right: 1rem
+		&__get-free-button
+			margin-top: 3rem
+
+	.cases
+		&__wrapper
+			padding-top: 0rem
+			padding-bottom: 6rem
+		&__headline
+			+headlineStyleD()
+			text-align: center
+			margin-top: 10rem
+		&__paragraph
+			margin-top: 1.8rem
+			width: 76rem
+		&__slider-container
+			margin-top: 3.3rem
+			width: 100%
+			position: relative
+		&__slider
+		&__slide
+			+flex(row, wrap, center, flex-start)
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__video-container
+			+size(47rem, 26.4rem)
+			margin-right: 2.9rem
+			&::before
+			&.active::before
+		&__video
+		&__play-video-button
+			&.active
+			&:hover
+		&__text-container
+			width: 47rem
+			padding-top: 0.5rem
+		&__company-name
+			font-family: $mm
+			font-size: 2.4rem
+		&__list
+			margin-top: 2.4rem
+		&__list-item
+			&:first-child
+			&::before, &::after
+			&::before
+			&::after
+		&__additional-list
+			&.active
+		&__show-additional-list
+			&:hover
+			&:hover::before
+			&::before
+			&.active
+		&__slider-buttons-container
+			width: 100%
+			position: absolute
+			top: 6.9rem
+			left: 0rem
+			+flex(row, wrap, space-between, flex-start)
+		&__slider-button
+			&:hover
+		&__prev-button
+			&::before, &::after
+			&::before
+			&::after
+		&__next-button
+			&::before, &::after
+			&::before
+			&::after
+
+	.faq
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+			padding-top: 12rem
+			padding-bottom: 6rem
+		&__block
+		&__block1
+			width: 57rem
+		&__block2
+			width: 46.4rem
+		&__headline
+			+headlineStyleD()
+			span
+		&__paragraph
+			margin-top: 1.9rem
+			line-height: 2.2rem
+		&__paragraph1
+		&__paragraph2
+			margin-top: 2.3rem
+		&__get-free-button
+			margin-top: 4rem
+		&__block
+		&__block1
+		&__block2
+		&__item
+			padding-left: 8.5rem
+			padding-top: 0.5rem
+			padding-bottom: 2rem
+			background-position: 0rem 0.4rem
+			&:first-child
+		&__item1
+			background-position: 0.7rem 0.4rem
+		&__item2
+			margin-top: 0.9rem
+		&__item3
+			margin-top: 2.1rem
+		&__item4
+			margin-top: 1.1rem
+		&__item-headline
+		&__item-paragraph
+			margin-top: 0.9rem
+			span
+
+	.prices
+		&__wrapper
+			padding-top: 4rem
+			padding-bottom: 12.2rem
+		&__headline
+			+headlineStyleD()
+			text-align: center
+		&__content
+			margin-top: 10.7rem
+			+flex(row, wrap, space-between, flex-start)
+		&__tariff
+			width: 37rem
+			padding-top: 8.4rem
+			padding-left: 3rem
+			padding-right: 2.9rem
+			&:first-child
+			&::before
+				font-size: 1.4rem
+			&:hover
+		&__tariff1
+			&::before
+		&__tariff2
+			&::before
+		&__tariff3
+			&::before
+		&__tariff-name
+		&__tariff-price
+			margin-top: 1.9rem
+			font-family: $msb
+			font-size: 3.6rem
+			position: relative
+		&__tariff2 &__tariff-price,
+		&__tariff3 &__tariff-price
+			left: 4.5rem
+			span
+				font-family: $mr
+				font-size: 2rem
+				position: absolute
+				top: 50%
+				left: 1.5rem
+				transform: translateY(-50%)
+		&__tariff-price-description
+			font-size: 1.4rem
+			top: 18rem
+		&__options
+		&__option
+			margin-top: 1.5rem
+			font-size: 1.4rem
+			&:first-child
+			&::before
+		&__tariff1 &__option1
+			&::before
+		&__tariff1 &__option2
+			&::before
+		&__tariff1 &__option3
+			&::before
+		&__tariff1 &__option4
+			&::before
+		&__tariff1 &__option5
+			&::before
+		&__tariff2 &__option1
+			&::before
+		&__tariff2 &__option2
+			&::before
+		&__tariff2 &__option3
+			&::before
+		&__tariff2 &__option4
+			&::before
+		&__tariff2 &__option5
+			&::before
+		&__tariff3 &__option1
+			&::before
+		&__tariff3 &__option2
+			&::before
+		&__tariff3 &__option3
+			&::before
+		&__tariff3 &__option4
+			&::before
+		&__tariff3 &__option5
+			&::before
+		&__get-free-button
+
+	.contact
+		&::before
+			+size(60rem, 18.5rem)
+			background: url('../assets/contact__airplane-d.webp') no-repeat 0rem 0rem
+			top: -3.7rem
+			right: 30.7rem
+		&__wrapper
+			padding-top: 6rem
+			padding-bottom: 6rem
+		&__headline
+			+headlineStyleD()
+		&__paragraph
+			width: 100%
+			text-align: left
+			margin-top: 0.6rem
+		&__form
+			width: 100%
+		&__row
+		&__row1
+		&__row2
+		&__row3
+			+flex(row, wrap, flex-start, center)
+		&__input-label
+			&::before
+		&__name-input-label
+			&::before
+		&__email-input-label
+			&::before
+		&__site-input-label
+			&::before
+		&__comment-input-label
+			margin-top: 1rem
+			&::before
+		&__input
+		&__name-input
+		&__email-input
+		&__site-input
+		&__comment-input
+		&__submit-button
+			margin-top: 2.7rem
+			width: 27rem
+		&__safety-link
+			margin-top: 2.6rem
+			margin-left: 3rem
+			background: url('../assets/contact__safety-icon.webp') no-repeat 0rem 0rem
+			span
+			&:hover
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, flex-start, flex-start)
+			padding-top: 6.1rem
+			padding-bottom: 2.3rem
+			&::before
+		&__logo-container
+		&__logo-image
+		&__socials-container
+			width: auto
+			margin-top: 0.4rem
+			margin-left: 6.4rem
+		&__social-link
+			margin-right: 4.2rem
+			&:last-child
+			&:hover
+			svg
+				path
+		&__social-link:hover svg path
+		&__vk
+		&__facebook
+			svg
+				+size(1.8rem, 1.8rem)
+		&__instagram
+		&__download-links-container
+			margin-left: 6rem
+			margin-top: 0.4rem
+			width: auto
+		&__download-app-link
+		&__play-market-link
+			margin-left: 2rem
+		&__app-store-image
+		&__play-market-image
+		&__contacts-container
+			width: auto
+			margin: 0rem
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 1.2rem
+			margin-left: 6rem
+			&::before
+		&__contact-link
+			margin: 0rem
+			&:hover
+			&::before
+		&__phone
+			&::before
+		&__email
+			margin-left: 2.5rem
+			&::before
+		&__list
+			margin-top: 5.4rem
+		&__list-item
+			margin-right: 2.6rem
+			&:last-child
+		&__list-link
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(row, wrap, flex-start, flex-start)
+			padding-top: 1.9rem
+			padding-bottom: 3rem
+		&__paragraph
+			margin: 0rem
+			width: 47rem
+			margin-top: 1.5rem
+		&__list
+			width: calc(100% - 47rem)
+			margin-top: 1rem
+			padding-left: 9.8rem
+		&__list-item
+			margin: 0rem
+			margin-top: 0.5rem
+			&:first-child
+				margin: 0rem
+		&__list-item:nth-child(1)
+			margin-top: 0rem
+		&__list-item:nth-child(2)
+			margin-top: 0rem
+		&__list-item:nth-child(even)
+			margin-left: 5.2rem
+		&__list-link
+			&:hover
+			span
+		&__list-link:last-child:hover
+		&__list-link:last-child:hover span
